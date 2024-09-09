@@ -1,0 +1,45 @@
+@import './../../helper/color';
+@import './../../helper/mixin';
+
+.footer {
+    background-color: $header;
+    color: $light;
+    padding: 39px 0 39px 0;
+    margin-top: 90px;
+    @include Karla;
+    font-weight: 500;
+    section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin-left: 5%;
+    @media(max-width:600px) {
+
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    div{
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+        &:nth-child(4){
+            display: flex;
+            justify-content: end;
+            @media(max-width:600px) {
+                    justify-content: center;
+            }
+            img{
+                height: 60px;
+                padding: 15px;
+                background-color: $greenBlur;
+                border-radius: 50%;
+               
+            }
+            
+        }
+    }
+    }
+}

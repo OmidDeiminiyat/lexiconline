@@ -1,0 +1,44 @@
+@import './../../helper/color';
+@import './../../helper/mixin';
+.searchBox{
+    width: 50%;
+    height: 150px;
+    margin-left: 25%;
+    background-color: $body;
+    text-align: center;
+    @media(max-width:600px) {
+        width: 96%;
+        height: 180px;
+        margin-left: 2%;
+        margin-top: 100px;
+    }
+    @media only screen and (min-width: 1324px) {
+    margin-top: -40px;
+
+    }
+    h1{
+        color: $dark;
+        padding-top: 20px;
+        @include Karla;
+    }
+ 
+    form{
+        width: 60%;
+        margin-left: 20%;
+        input{
+            height: 30px;
+            width: 70%;
+            border-radius: 15px 0 0 15px;
+            border: 1px solid $header;
+        }
+        button{
+            height: 34px;
+            width: 24%;
+            border-radius: 0 15px 15px 0;
+            border: 1px solid $header;
+            background-color: $greenBlur;
+            color: $headColor;
+            @include Karla;
+        }
+    }
+}

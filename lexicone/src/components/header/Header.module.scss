@@ -1,0 +1,27 @@
+@import './../../helper/color';
+@import './../../helper/mixin';
+.headers {
+    position: relative;
+    margin-top: -100px;
+    z-index: -1;
+    text-align: center;
+
+    img{
+        width: 100%;
+        height: 400px;
+    }
+    h1{
+        position: relative;
+        margin-top: -25%;
+        color: $headColor;
+        font-size: 100px;
+        @include Mark;
+        @media(max-width:600px) {
+            margin-top: -50%;
+            font-size: 60px;
+        }
+        @media only screen and (min-width: 1324px){
+            margin-top: -12%;
+        }
+    }
+}
